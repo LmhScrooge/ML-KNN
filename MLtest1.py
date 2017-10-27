@@ -1,7 +1,7 @@
 import numpy as np
 import operator
 import os
-"""
+
 group = np.array(
         [[1, 101],
          [5, 89],
@@ -13,7 +13,9 @@ test = [101,20]
 group_size = group.shape[0]
 diff = np.tile(test,(group_size,1)) - group
 sqdiff = diff*diff
+print(sqdiff[1:3])
 sqsum = sqdiff.sum(axis=1)
+print(sqsum)
 sqend = sqsum**0.5
 sortdist = sqend.argsort()
 print(sqend)
@@ -27,3 +29,4 @@ print(sortclass)
 """
 fh = open('datingText.txt','w')
 fh.close()
+"""
